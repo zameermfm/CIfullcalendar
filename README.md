@@ -31,7 +31,7 @@ add this AJAX Function in this controller
 				$calendardata = $this->samplemodel->getCalendarEvents();
 		
 				$json = array();
-        $mydata = $this->input->post('mydata');
+        			$mydata = $this->input->post('mydata'); //recieving the ajax post data
 				$format = 'DATE_ISO8601';
 
 				foreach ($calendardata as $key =>$value) {
@@ -40,7 +40,8 @@ add this AJAX Function in this controller
 					$eventStart = standard_date($format, $startTime);
 					$endTime = human_to_unix($calendardata[$key]->event_end);
 					$eventEnd = standard_date($format, $endTime);
-          $url = "http://www.google.com";
+        				$url = "http://www.google.com";
+        				
 					$json[] = array(
 				        'title' => $title,
 				        'start' =>$eventStart,
