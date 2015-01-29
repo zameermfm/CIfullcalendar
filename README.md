@@ -13,6 +13,7 @@ In the following example, we assume there is a controller named <i>SampleControl
 	{
 			parent::__construct();
 			$this->load->model('samplemodel');
+			$this->load->library('event'); //Loading the event library given on the repository
 	}
 	function viewcalendar()
 	{
