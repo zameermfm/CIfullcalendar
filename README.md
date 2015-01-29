@@ -73,7 +73,7 @@ in the view where FullCalendar is integrated you can add these codes to the Jque
 recieve calendar data.
 
 
-function renderCalendar(sentdata) {
+	function renderCalendar(sentdata) {
 		
 			$('#calendar').fullCalendar({
 				header: {
