@@ -23,7 +23,7 @@ class SampleController extends CI_Controller {
 
 add this AJAX Function in this controller
 
-public function get_calendar_data(){
+	public function get_calendar_data(){
 		if ($this->input->is_ajax_request()) 
 			{
 				$timezone = null; //or you can load from somewhere
