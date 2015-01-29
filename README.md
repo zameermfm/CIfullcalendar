@@ -3,9 +3,8 @@ FullCalendar Jquery Calendar plugin integration for PHP Codeigniter framework
 
 <b>Copy Event.php to Application\Library folder</b>
 
-If you are loading your Calendar data from a database,
-In the controller function (E.g SampleController) in which you load the view where the FullCalendar is integrated (E.g fullcalendarexample), 
-In the following example, we assume there is a model named samplemodel and it has a function getCalendarEvents() to get all calendar events in normal datetime mysql format.
+If you are loading your Calendar data from a database this example will explain on how to integrate,
+In the following example, we assume there is a controller named <i>SampleController</I> and the controller has a function named <i>viewcalendar</i> which load view <i>fullcalendarexample</i> (the view where full calendar is integrated), also a model named <i>samplemodel</i> and the model has a function <i>getCalendarEvents()</i> to get all calendar events in normal <i>datetime</i> mysql format. 
 	
 	//Controller
 	class SampleController extends CI_Controller {
